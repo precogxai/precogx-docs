@@ -1,0 +1,24 @@
+{
+  "id": "customer-value",
+  "title": "Customer Value Delivery",
+  "description": "This document outlines how PrecogX's \"Agent-as-Impact™\" model delivers measurable value to customers through each stage of their journey, from initial onboarding to ongoing protection and analytics. We use a real estate AI agent as our primary example to demonstrate concrete value delivery.",
+  "source": "@site/docs/customer-value.md",
+  "sourceDirName": ".",
+  "slug": "/customer-value",
+  "permalink": "/precogx-docs/docs/customer-value",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/precogxai/precogx-docs/tree/main/docs/customer-value.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Pricing",
+    "permalink": "/precogx-docs/docs/pricing"
+  },
+  "next": {
+    "title": "Frequently Asked Questions (FAQ)",
+    "permalink": "/precogx-docs/docs/faq"
+  }
+}

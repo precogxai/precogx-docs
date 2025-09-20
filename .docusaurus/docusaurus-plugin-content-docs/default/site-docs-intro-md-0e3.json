@@ -1,0 +1,23 @@
+{
+  "id": "intro",
+  "title": "Welcome to PrecogX",
+  "description": "AI-native cybersecurity for the modern world",
+  "source": "@site/docs/intro.md",
+  "sourceDirName": ".",
+  "slug": "/intro",
+  "permalink": "/precogx-docs/docs/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/precogxai/precogx-docs/tree/main/docs/intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Quickstart Guide",
+    "permalink": "/precogx-docs/docs/getting-started/quickstart"
+  }
+}

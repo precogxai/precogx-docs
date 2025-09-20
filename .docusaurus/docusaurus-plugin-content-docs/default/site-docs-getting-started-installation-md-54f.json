@@ -1,0 +1,27 @@
+{
+  "id": "getting-started/installation",
+  "title": "Installation Guide",
+  "description": "Detailed installation instructions for PrecogX SDK and integrations.",
+  "source": "@site/docs/getting-started/installation.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/installation",
+  "permalink": "/precogx-docs/docs/getting-started/installation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/precogxai/precogx-docs/tree/main/docs/getting-started/installation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quickstart Guide",
+    "permalink": "/precogx-docs/docs/getting-started/quickstart"
+  },
+  "next": {
+    "title": "Creating Your First Agent",
+    "permalink": "/precogx-docs/docs/getting-started/first-agent"
+  }
+}

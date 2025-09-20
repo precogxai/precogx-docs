@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-security" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Security &amp; Encryption | PrecogX Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://precogxai.github.io/precogx-docs/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://precogxai.github.io/precogx-docs/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://precogxai.github.io/precogx-docs/docs/security"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Security &amp; Encryption | PrecogX Documentation"><meta data-rh="true" name="description" content="PrecogX implements enterprise-grade security measures to protect your sensitive AI agent data and telemetry information. This document outlines our comprehensive security architecture and encryption practices."><meta data-rh="true" property="og:description" content="PrecogX implements enterprise-grade security measures to protect your sensitive AI agent data and telemetry information. This document outlines our comprehensive security architecture and encryption practices."><link data-rh="true" rel="icon" href="/precogx-docs/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://precogxai.github.io/precogx-docs/docs/security"><link data-rh="true" rel="alternate" href="https://precogxai.github.io/precogx-docs/docs/security" hreflang="en"><link data-rh="true" rel="alternate" href="https://precogxai.github.io/precogx-docs/docs/security" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Security & Encryption","item":"https://precogxai.github.io/precogx-docs/docs/security"}]}</script><link rel="stylesheet" href="/precogx-docs/assets/css/styles.8532baaa.css">
+<script src="/precogx-docs/assets/js/runtime~main.186a5f41.js" defer="defer"></script>
+<script src="/precogx-docs/assets/js/main.00cf5645.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/precogx-docs/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/precogx-docs/"><div class="navbar__logo"><img src="/precogx-docs/img/logo.svg" alt="PrecogX Logo" class="themedComponent_mlkZ themedComponent--light_NVdE" height="32" width="32"><img src="/precogx-docs/img/logo.svg" alt="PrecogX Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU" height="32" width="32"></div><b class="navbar__title text--truncate">PrecogX</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/precogx-docs/docs/intro">Documentation</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://app.precogx.ai" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Dashboard<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><a href="https://github.com/precogxai/precogx_sdk" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/precogx-docs/docs/intro">Welcome to PrecogX</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/precogx-docs/docs/getting-started/quickstart">Getting Started</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/precogx-docs/docs/frameworks">Integration Guides</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/precogx-docs/docs/architecture">Security &amp; Architecture</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/precogx-docs/docs/architecture">Layered Security Architecture</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/precogx-docs/docs/security">Security &amp; Encryption</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/precogx-docs/docs/pricing">Business</a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/precogx-docs/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Security &amp; Architecture</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Security &amp; Encryption</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Security &amp; Encryption</h1></header>
+<p>PrecogX implements enterprise-grade security measures to protect your sensitive AI agent data and telemetry information. This document outlines our comprehensive security architecture and encryption practices.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-security-architecture">🛡️ Security Architecture<a href="#️-security-architecture" class="hash-link" aria-label="Direct link to 🛡️ Security Architecture" title="Direct link to 🛡️ Security Architecture">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="data-encryption">Data Encryption<a href="#data-encryption" class="hash-link" aria-label="Direct link to Data Encryption" title="Direct link to Data Encryption">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="encryption-at-rest"><strong>Encryption at Rest</strong><a href="#encryption-at-rest" class="hash-link" aria-label="Direct link to encryption-at-rest" title="Direct link to encryption-at-rest">​</a></h4>
+<ul>
+<li><strong>AES-256 encryption</strong> for all sensitive data stored in the database</li>
+<li><strong>Field-level encryption</strong> for personally identifiable information (PII)</li>
+<li><strong>Encrypted API keys</strong> with secure key management</li>
+<li><strong>Encrypted user data</strong> (names, contact information)</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="encryption-in-transit"><strong>Encryption in Transit</strong><a href="#encryption-in-transit" class="hash-link" aria-label="Direct link to encryption-in-transit" title="Direct link to encryption-in-transit">​</a></h4>
+<ul>
+<li><strong>TLS 1.3</strong> for all API communications</li>
+<li><strong>HTTPS enforcement</strong> for all endpoints</li>
+<li><strong>Certificate pinning</strong> for enhanced security</li>
+<li><strong>Perfect Forward Secrecy</strong> (PFS) support</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="database-security">Database Security<a href="#database-security" class="hash-link" aria-label="Direct link to Database Security" title="Direct link to Database Security">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql-security"><strong>PostgreSQL Security</strong><a href="#postgresql-security" class="hash-link" aria-label="Direct link to postgresql-security" title="Direct link to postgresql-security">​</a></h4>
+<ul>
+<li><strong>SSL/TLS connections</strong> required for all database access</li>
+<li><strong>Row-level security</strong> (RLS) for multi-tenant data isolation</li>
+<li><strong>Encrypted connections</strong> with certificate validation</li>
+<li><strong>Secure connection strings</strong> with environment-based secrets</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="data-isolation"><strong>Data Isolation</strong><a href="#data-isolation" class="hash-link" aria-label="Direct link to data-isolation" title="Direct link to data-isolation">​</a></h4>
+<ul>
+<li><strong>Tenant-based isolation</strong> ensures complete data separation</li>
+<li><strong>Encrypted tenant boundaries</strong> prevent cross-tenant access</li>
+<li><strong>Audit logging</strong> for all data access patterns</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-key-management">🔑 Key Management<a href="#-key-management" class="hash-link" aria-label="Direct link to 🔑 Key Management" title="Direct link to 🔑 Key Management">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="encryption-keys">Encryption Keys<a href="#encryption-keys" class="hash-link" aria-label="Direct link to Encryption Keys" title="Direct link to Encryption Keys">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="key-generation"><strong>Key Generation</strong><a href="#key-generation" class="hash-link" aria-label="Direct link to key-generation" title="Direct link to key-generation">​</a></h4>
+<ul>
+<li><strong>Cryptographically secure</strong> random key generation</li>
+<li><strong>256-bit encryption keys</strong> for maximum security</li>
+<li><strong>Key rotation</strong> support for enhanced security</li>
+<li><strong>Environment-based key storage</strong> (never hardcoded)</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="key-storage"><strong>Key Storage</strong><a href="#key-storage" class="hash-link" aria-label="Direct link to key-storage" title="Direct link to key-storage">​</a></h4>
+<ul>
+<li><strong>Environment variables</strong> for production key storage</li>
+<li><strong>Secure key derivation</strong> using PBKDF2 with 100,000 iterations</li>
+<li><strong>Salt-based hashing</strong> for additional security</li>
+<li><strong>No key storage</strong> in application code or logs</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="api-key-security">API Key Security<a href="#api-key-security" class="hash-link" aria-label="Direct link to API Key Security" title="Direct link to API Key Security">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="api-key-protection"><strong>API Key Protection</strong><a href="#api-key-protection" class="hash-link" aria-label="Direct link to api-key-protection" title="Direct link to api-key-protection">​</a></h4>
+<ul>
+<li><strong>Encrypted storage</strong> in database</li>
+<li><strong>Hash-based searching</strong> without decryption</li>
+<li><strong>Secure key generation</strong> using cryptographically secure random</li>
+<li><strong>Automatic key rotation</strong> support</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-compliance--standards">🔒 Compliance &amp; Standards<a href="#-compliance--standards" class="hash-link" aria-label="Direct link to 🔒 Compliance &amp; Standards" title="Direct link to 🔒 Compliance &amp; Standards">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="security-standards">Security Standards<a href="#security-standards" class="hash-link" aria-label="Direct link to Security Standards" title="Direct link to Security Standards">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="encryption-standards"><strong>Encryption Standards</strong><a href="#encryption-standards" class="hash-link" aria-label="Direct link to encryption-standards" title="Direct link to encryption-standards">​</a></h4>
+<ul>
+<li><strong>AES-256-GCM</strong> for symmetric encryption</li>
+<li><strong>RSA-4096</strong> for key exchange (where applicable)</li>
+<li><strong>SHA-256</strong> for hashing operations</li>
+<li><strong>PBKDF2</strong> for key derivation</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="transport-security"><strong>Transport Security</strong><a href="#transport-security" class="hash-link" aria-label="Direct link to transport-security" title="Direct link to transport-security">​</a></h4>
+<ul>
+<li><strong>TLS 1.3</strong> minimum version</li>
+<li><strong>Perfect Forward Secrecy</strong> (PFS)</li>
+<li><strong>Certificate validation</strong> with proper CA chains</li>
+<li><strong>HSTS headers</strong> for browser security</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="compliance-readiness">Compliance Readiness<a href="#compliance-readiness" class="hash-link" aria-label="Direct link to Compliance Readiness" title="Direct link to Compliance Readiness">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="soc-2-type-ii"><strong>SOC 2 Type II</strong><a href="#soc-2-type-ii" class="hash-link" aria-label="Direct link to soc-2-type-ii" title="Direct link to soc-2-type-ii">​</a></h4>
+<ul>
+<li><strong>Access controls</strong> and authentication</li>
+<li><strong>Data encryption</strong> at rest and in transit</li>
+<li><strong>Audit logging</strong> and monitoring</li>
+<li><strong>Incident response</strong> procedures</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="gdpr-compliance"><strong>GDPR Compliance</strong><a href="#gdpr-compliance" class="hash-link" aria-label="Direct link to gdpr-compliance" title="Direct link to gdpr-compliance">​</a></h4>
+<ul>
+<li><strong>Data minimization</strong> principles</li>
+<li><strong>Right to erasure</strong> support</li>
+<li><strong>Data portability</strong> features</li>
+<li><strong>Consent management</strong> capabilities</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="hipaa-readiness"><strong>HIPAA Readiness</strong><a href="#hipaa-readiness" class="hash-link" aria-label="Direct link to hipaa-readiness" title="Direct link to hipaa-readiness">​</a></h4>
+<ul>
+<li><strong>PHI protection</strong> measures</li>
+<li><strong>Access controls</strong> and audit trails</li>
+<li><strong>Data encryption</strong> requirements</li>
+<li><strong>Business Associate</strong> agreement support</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-implementation-details">🛠️ Implementation Details<a href="#️-implementation-details" class="hash-link" aria-label="Direct link to 🛠️ Implementation Details" title="Direct link to 🛠️ Implementation Details">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="encryption-service">Encryption Service<a href="#encryption-service" class="hash-link" aria-label="Direct link to Encryption Service" title="Direct link to Encryption Service">​</a></h3>
+<div class="language-python codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-python codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token comment" style="color:#999988;font-style:italic"># Example: Encrypting sensitive data</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">from</span><span class="token plain"> app</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">core</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">encryption </span><span class="token keyword" style="color:#00009f">import</span><span class="token plain"> encryption_service</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic"># Encrypt user data</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">encrypted_name </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> encryption_service</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">encrypt</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&quot;John Doe&quot;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic"># Decrypt user data</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">decrypted_name </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> encryption_service</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">decrypt</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">encrypted_name</span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="database-schema">Database Schema<a href="#database-schema" class="hash-link" aria-label="Direct link to Database Schema" title="Direct link to Database Schema">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="encrypted-fields"><strong>Encrypted Fields</strong><a href="#encrypted-fields" class="hash-link" aria-label="Direct link to encrypted-fields" title="Direct link to encrypted-fields">​</a></h4>
+<ul>
+<li><code>users._first_name_encrypted</code> - Encrypted first name</li>
+<li><code>users._last_name_encrypted</code> - Encrypted last name</li>
+<li><code>api_keys._api_key_encrypted</code> - Encrypted API key</li>
+<li><code>api_keys._api_key_hash</code> - Hash for searching</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="search-capabilities"><strong>Search Capabilities</strong><a href="#search-capabilities" class="hash-link" aria-label="Direct link to search-capabilities" title="Direct link to search-capabilities">​</a></h4>
+<ul>
+<li><strong>Hash-based searching</strong> for encrypted data</li>
+<li><strong>Indexed lookups</strong> without decryption</li>
+<li><strong>Secure query patterns</strong> for performance</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-security-monitoring">🔍 Security Monitoring<a href="#-security-monitoring" class="hash-link" aria-label="Direct link to 🔍 Security Monitoring" title="Direct link to 🔍 Security Monitoring">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="audit-logging">Audit Logging<a href="#audit-logging" class="hash-link" aria-label="Direct link to Audit Logging" title="Direct link to Audit Logging">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="comprehensive-logging"><strong>Comprehensive Logging</strong><a href="#comprehensive-logging" class="hash-link" aria-label="Direct link to comprehensive-logging" title="Direct link to comprehensive-logging">​</a></h4>
+<ul>
+<li><strong>All data access</strong> events logged</li>
+<li><strong>Authentication attempts</strong> tracked</li>
+<li><strong>API key usage</strong> monitored</li>
+<li><strong>Encryption/decryption</strong> operations logged</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="security-events"><strong>Security Events</strong><a href="#security-events" class="hash-link" aria-label="Direct link to security-events" title="Direct link to security-events">​</a></h4>
+<ul>
+<li><strong>Failed authentication</strong> attempts</li>
+<li><strong>Suspicious access</strong> patterns</li>
+<li><strong>Data modification</strong> events</li>
+<li><strong>Key rotation</strong> activities</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="threat-detection">Threat Detection<a href="#threat-detection" class="hash-link" aria-label="Direct link to Threat Detection" title="Direct link to Threat Detection">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="real-time-monitoring"><strong>Real-time Monitoring</strong><a href="#real-time-monitoring" class="hash-link" aria-label="Direct link to real-time-monitoring" title="Direct link to real-time-monitoring">​</a></h4>
+<ul>
+<li><strong>Anomaly detection</strong> for access patterns</li>
+<li><strong>Brute force</strong> attack prevention</li>
+<li><strong>Suspicious activity</strong> alerts</li>
+<li><strong>Automated response</strong> to threats</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-deployment-security">🚀 Deployment Security<a href="#-deployment-security" class="hash-link" aria-label="Direct link to 🚀 Deployment Security" title="Direct link to 🚀 Deployment Security">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="environment-configuration">Environment Configuration<a href="#environment-configuration" class="hash-link" aria-label="Direct link to Environment Configuration" title="Direct link to Environment Configuration">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="required-environment-variables"><strong>Required Environment Variables</strong><a href="#required-environment-variables" class="hash-link" aria-label="Direct link to required-environment-variables" title="Direct link to required-environment-variables">​</a></h4>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"># Encryption</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">ENCRYPTION_KEY=your-256-bit-encryption-key</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># JWT Security</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">JWT_SECRET_KEY=your-jwt-secret-key</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">ACCESS_TOKEN_EXPIRE_MINUTES=30</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># Database Security</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">DATABASE_URL=postgresql://user:pass@host:5432/db?sslmode=require</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># API Security</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">API_KEY_SECRET=your-api-key-secret</span><br></span></code></pre></div></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="production-security-checklist"><strong>Production Security Checklist</strong><a href="#production-security-checklist" class="hash-link" aria-label="Direct link to production-security-checklist" title="Direct link to production-security-checklist">​</a></h4>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>ENCRYPTION_KEY</strong> set with 256-bit key</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>JWT_SECRET_KEY</strong> set with secure random string</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Database SSL</strong> enabled and verified</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>HTTPS enforcement</strong> enabled</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Security headers</strong> configured</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Rate limiting</strong> implemented</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Audit logging</strong> enabled</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-customer-assurance">📋 Customer Assurance<a href="#-customer-assurance" class="hash-link" aria-label="Direct link to 📋 Customer Assurance" title="Direct link to 📋 Customer Assurance">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="data-protection-guarantee">Data Protection Guarantee<a href="#data-protection-guarantee" class="hash-link" aria-label="Direct link to Data Protection Guarantee" title="Direct link to Data Protection Guarantee">​</a></h3>
+<blockquote>
+<p><strong>&quot;PrecogX implements enterprise-grade security with AES-256 encryption for all data at rest and in transit, ensuring your sensitive AI agent data and telemetry information is fully protected.&quot;</strong></p>
+</blockquote>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="what-we-protect"><strong>What We Protect</strong><a href="#what-we-protect" class="hash-link" aria-label="Direct link to what-we-protect" title="Direct link to what-we-protect">​</a></h4>
+<ul>
+<li>✅ <strong>User PII</strong> (names, emails, contact info)</li>
+<li>✅ <strong>API keys</strong> and authentication tokens</li>
+<li>✅ <strong>Telemetry data</strong> and detection results</li>
+<li>✅ <strong>Configuration data</strong> and settings</li>
+<li>✅ <strong>Audit logs</strong> and access patterns</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="what-we-dont-store"><strong>What We Don&#x27;t Store</strong><a href="#what-we-dont-store" class="hash-link" aria-label="Direct link to what-we-dont-store" title="Direct link to what-we-dont-store">​</a></h4>
+<ul>
+<li>❌ <strong>Plaintext passwords</strong> (bcrypt hashed only)</li>
+<li>❌ <strong>Unencrypted sensitive data</strong></li>
+<li>❌ <strong>Raw API keys</strong> in logs or files</li>
+<li>❌ <strong>Customer data</strong> in application code</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="security-certifications">Security Certifications<a href="#security-certifications" class="hash-link" aria-label="Direct link to Security Certifications" title="Direct link to Security Certifications">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="current-status"><strong>Current Status</strong><a href="#current-status" class="hash-link" aria-label="Direct link to current-status" title="Direct link to current-status">​</a></h4>
+<ul>
+<li><strong>SOC 2 Type II</strong> - Compliant ready, certification in progress</li>
+<li><strong>GDPR Compliance</strong> - Compliant ready, certification In progress</li>
+<li><strong>HIPAA Readiness</strong> - Compliant read, certification In progress</li>
+<li><strong>ISO 27001</strong> - Planned</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="third-party-audits"><strong>Third-Party Audits</strong><a href="#third-party-audits" class="hash-link" aria-label="Direct link to third-party-audits" title="Direct link to third-party-audits">​</a></h4>
+<ul>
+<li><strong>Security assessments</strong> by certified professionals</li>
+<li><strong>Penetration testing</strong> on regular basis</li>
+<li><strong>Code security reviews</strong> for all releases</li>
+<li><strong>Infrastructure audits</strong> for compliance</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-security-incident-response">🆘 Security Incident Response<a href="#-security-incident-response" class="hash-link" aria-label="Direct link to 🆘 Security Incident Response" title="Direct link to 🆘 Security Incident Response">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="incident-reporting">Incident Reporting<a href="#incident-reporting" class="hash-link" aria-label="Direct link to Incident Reporting" title="Direct link to Incident Reporting">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-report"><strong>How to Report</strong><a href="#how-to-report" class="hash-link" aria-label="Direct link to how-to-report" title="Direct link to how-to-report">​</a></h4>
+<ul>
+<li><strong>Email</strong>: <a href="mailto:security@precogx.ai" target="_blank" rel="noopener noreferrer">security@precogx.ai</a></li>
+<li><strong>Phone</strong>:</li>
+<li><strong>Dashboard</strong>: Security tab in admin panel</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="response-timeline"><strong>Response Timeline</strong><a href="#response-timeline" class="hash-link" aria-label="Direct link to response-timeline" title="Direct link to response-timeline">​</a></h4>
+<ul>
+<li><strong>Critical issues</strong>: 1 hour response</li>
+<li><strong>High priority</strong>: 4 hours response</li>
+<li><strong>Medium priority</strong>: 24 hours response</li>
+<li><strong>Low priority</strong>: 72 hours response</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="security-updates">Security Updates<a href="#security-updates" class="hash-link" aria-label="Direct link to Security Updates" title="Direct link to Security Updates">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="regular-updates"><strong>Regular Updates</strong><a href="#regular-updates" class="hash-link" aria-label="Direct link to regular-updates" title="Direct link to regular-updates">​</a></h4>
+<ul>
+<li><strong>Monthly security patches</strong></li>
+<li><strong>Quarterly security reviews</strong></li>
+<li><strong>Annual penetration testing</strong></li>
+<li><strong>Continuous monitoring</strong> and improvement</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-contact">📞 Contact<a href="#-contact" class="hash-link" aria-label="Direct link to 📞 Contact" title="Direct link to 📞 Contact">​</a></h2>
+<p>For security-related questions or concerns:</p>
+<ul>
+<li><strong>Security Team</strong>: <a href="mailto:security@precogx.ai" target="_blank" rel="noopener noreferrer">security@precogx.ai</a></li>
+<li><strong>General Support</strong>: <a href="mailto:support@precogx.ai" target="_blank" rel="noopener noreferrer">support@precogx.ai</a></li>
+<li><strong>Emergency</strong>:</li>
+</ul>
+<hr>
+<p><em>Last updated: September 2024</em>
+<em>Version: 1.0</em></p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/precogxai/precogx-docs/tree/main/docs/security.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/precogx-docs/docs/architecture"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Layered Security Architecture</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/precogx-docs/docs/pricing"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Pricing</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#️-security-architecture" class="table-of-contents__link toc-highlight">🛡️ Security Architecture</a><ul><li><a href="#data-encryption" class="table-of-contents__link toc-highlight">Data Encryption</a></li><li><a href="#database-security" class="table-of-contents__link toc-highlight">Database Security</a></li></ul></li><li><a href="#-key-management" class="table-of-contents__link toc-highlight">🔑 Key Management</a><ul><li><a href="#encryption-keys" class="table-of-contents__link toc-highlight">Encryption Keys</a></li><li><a href="#api-key-security" class="table-of-contents__link toc-highlight">API Key Security</a></li></ul></li><li><a href="#-compliance--standards" class="table-of-contents__link toc-highlight">🔒 Compliance &amp; Standards</a><ul><li><a href="#security-standards" class="table-of-contents__link toc-highlight">Security Standards</a></li><li><a href="#compliance-readiness" class="table-of-contents__link toc-highlight">Compliance Readiness</a></li></ul></li><li><a href="#️-implementation-details" class="table-of-contents__link toc-highlight">🛠️ Implementation Details</a><ul><li><a href="#encryption-service" class="table-of-contents__link toc-highlight">Encryption Service</a></li><li><a href="#database-schema" class="table-of-contents__link toc-highlight">Database Schema</a></li></ul></li><li><a href="#-security-monitoring" class="table-of-contents__link toc-highlight">🔍 Security Monitoring</a><ul><li><a href="#audit-logging" class="table-of-contents__link toc-highlight">Audit Logging</a></li><li><a href="#threat-detection" class="table-of-contents__link toc-highlight">Threat Detection</a></li></ul></li><li><a href="#-deployment-security" class="table-of-contents__link toc-highlight">🚀 Deployment Security</a><ul><li><a href="#environment-configuration" class="table-of-contents__link toc-highlight">Environment Configuration</a></li></ul></li><li><a href="#-customer-assurance" class="table-of-contents__link toc-highlight">📋 Customer Assurance</a><ul><li><a href="#data-protection-guarantee" class="table-of-contents__link toc-highlight">Data Protection Guarantee</a></li><li><a href="#security-certifications" class="table-of-contents__link toc-highlight">Security Certifications</a></li></ul></li><li><a href="#-security-incident-response" class="table-of-contents__link toc-highlight">🆘 Security Incident Response</a><ul><li><a href="#incident-reporting" class="table-of-contents__link toc-highlight">Incident Reporting</a></li><li><a href="#security-updates" class="table-of-contents__link toc-highlight">Security Updates</a></li></ul></li><li><a href="#-contact" class="table-of-contents__link toc-highlight">📞 Contact</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Documentation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/precogx-docs/docs/intro">Getting Started</a></li><li class="footer__item"><a class="footer__link-item" href="/precogx-docs/docs/getting-started/quickstart">Quickstart</a></li><li class="footer__item"><a class="footer__link-item" href="/precogx-docs/docs/getting-started/installation">Installation</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Product</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://app.precogx.ai" target="_blank" rel="noopener noreferrer" class="footer__link-item">Dashboard<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://precogx.ai/#pricing" target="_blank" rel="noopener noreferrer" class="footer__link-item">Pricing<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://precogx.ai/#features" target="_blank" rel="noopener noreferrer" class="footer__link-item">Features<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Support</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/precogxai" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://status.precogx.ai" target="_blank" rel="noopener noreferrer" class="footer__link-item">Status<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="mailto:support@precogx.ai" target="_blank" rel="noopener noreferrer" class="footer__link-item">Contact<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 PrecogX. All rights reserved.</div></div></div></footer></div>
+</body>
+</html>

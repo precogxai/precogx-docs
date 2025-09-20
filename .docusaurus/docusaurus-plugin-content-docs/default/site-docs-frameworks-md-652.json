@@ -1,0 +1,24 @@
+{
+  "id": "frameworks",
+  "title": "Framework Integration",
+  "description": "PrecogX provides seamless integration with all major AI frameworks. Choose your framework below to get started with comprehensive AI agent security monitoring.",
+  "source": "@site/docs/frameworks.md",
+  "sourceDirName": ".",
+  "slug": "/frameworks",
+  "permalink": "/precogx-docs/docs/frameworks",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/precogxai/precogx-docs/tree/main/docs/frameworks.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Creating Your First Agent",
+    "permalink": "/precogx-docs/docs/getting-started/first-agent"
+  },
+  "next": {
+    "title": "No-Code Platform Integration",
+    "permalink": "/precogx-docs/docs/no-code-integration"
+  }
+}

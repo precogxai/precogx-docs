@@ -1,0 +1,15 @@
+{
+  "id": "slack-integration",
+  "title": "Slack Integration Guide",
+  "description": "Connect PrecogX to your Slack workspace to receive real-time security alerts and manage detections directly from Slack.",
+  "source": "@site/docs/slack-integration.md",
+  "sourceDirName": ".",
+  "slug": "/slack-integration",
+  "permalink": "/precogx-docs/docs/slack-integration",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/precogxai/precogx-docs/tree/main/docs/slack-integration.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

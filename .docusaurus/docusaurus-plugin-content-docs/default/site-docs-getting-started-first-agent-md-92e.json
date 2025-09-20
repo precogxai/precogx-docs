@@ -1,0 +1,27 @@
+{
+  "id": "getting-started/first-agent",
+  "title": "Creating Your First Agent",
+  "description": "Learn how to create and protect your first AI agent with PrecogX.",
+  "source": "@site/docs/getting-started/first-agent.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/first-agent",
+  "permalink": "/precogx-docs/docs/getting-started/first-agent",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/precogxai/precogx-docs/tree/main/docs/getting-started/first-agent.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installation Guide",
+    "permalink": "/precogx-docs/docs/getting-started/installation"
+  },
+  "next": {
+    "title": "Framework Integration",
+    "permalink": "/precogx-docs/docs/frameworks"
+  }
+}

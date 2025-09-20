@@ -1,0 +1,24 @@
+{
+  "id": "architecture",
+  "title": "Layered Security Architecture",
+  "description": "PrecogX's Layered Security Architecture provides enterprise-grade AI security through a sophisticated multi-layer detection and prevention system. This architecture combines automated threat detection with human-in-the-loop validation, ensuring maximum security while maintaining operational efficiency.",
+  "source": "@site/docs/architecture.md",
+  "sourceDirName": ".",
+  "slug": "/architecture",
+  "permalink": "/precogx-docs/docs/architecture",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/precogxai/precogx-docs/tree/main/docs/architecture.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "No-Code Platform Integration",
+    "permalink": "/precogx-docs/docs/no-code-integration"
+  },
+  "next": {
+    "title": "Security & Encryption",
+    "permalink": "/precogx-docs/docs/security"
+  }
+}

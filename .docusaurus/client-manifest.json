@@ -1,0 +1,309 @@
+{
+  "entrypoints": [
+    "main"
+  ],
+  "origins": {
+    "237": [
+      237
+    ],
+    "17896441": [
+      869,
+      401
+    ],
+    "main": [
+      354,
+      869,
+      792
+    ],
+    "runtime~main": [
+      792,
+      869,
+      354
+    ],
+    "0480b142": [
+      70
+    ],
+    "0e384e19": [
+      976
+    ],
+    "1df93b7f": [
+      869,
+      583
+    ],
+    "3fd68248": [
+      640
+    ],
+    "5281b7a2": [
+      443
+    ],
+    "53ef62c9": [
+      6
+    ],
+    "54f44165": [
+      924
+    ],
+    "5b44f34d": [
+      595
+    ],
+    "5e95c892": [
+      647
+    ],
+    "6525ad36": [
+      687
+    ],
+    "7ab8c43e": [
+      36
+    ],
+    "92eeeb13": [
+      273
+    ],
+    "a7456010": [
+      235
+    ],
+    "a7bd4aaa": [
+      98
+    ],
+    "a94703ab": [
+      869,
+      48
+    ],
+    "aba21aa0": [
+      742
+    ],
+    "db32d859": [
+      884
+    ],
+    "edc0698a": [
+      267
+    ],
+    "fbd7a87c": [
+      361
+    ],
+    "styles": [
+      48,
+      354,
+      401,
+      583,
+      792,
+      869
+    ]
+  },
+  "assets": {
+    "6": {
+      "js": [
+        {
+          "file": "assets/js/53ef62c9.b198fb50.js",
+          "hash": "d6e5f8c5e2feea1f",
+          "publicPath": "/precogx-docs/assets/js/53ef62c9.b198fb50.js"
+        }
+      ]
+    },
+    "36": {
+      "js": [
+        {
+          "file": "assets/js/7ab8c43e.7eae2a7b.js",
+          "hash": "5b64d969bbf0981c",
+          "publicPath": "/precogx-docs/assets/js/7ab8c43e.7eae2a7b.js"
+        }
+      ]
+    },
+    "48": {
+      "js": [
+        {
+          "file": "assets/js/a94703ab.7d43ed7f.js",
+          "hash": "8ddb683186afad1b",
+          "publicPath": "/precogx-docs/assets/js/a94703ab.7d43ed7f.js"
+        }
+      ]
+    },
+    "70": {
+      "js": [
+        {
+          "file": "assets/js/0480b142.0883b7e5.js",
+          "hash": "dafff670d739fd28",
+          "publicPath": "/precogx-docs/assets/js/0480b142.0883b7e5.js"
+        }
+      ]
+    },
+    "98": {
+      "js": [
+        {
+          "file": "assets/js/a7bd4aaa.15fcab0b.js",
+          "hash": "6df81eb86cb5bd3b",
+          "publicPath": "/precogx-docs/assets/js/a7bd4aaa.15fcab0b.js"
+        }
+      ]
+    },
+    "235": {
+      "js": [
+        {
+          "file": "assets/js/a7456010.953f109a.js",
+          "hash": "e513c1038860e35e",
+          "publicPath": "/precogx-docs/assets/js/a7456010.953f109a.js"
+        }
+      ]
+    },
+    "237": {
+      "js": [
+        {
+          "file": "assets/js/237.5653b29d.js",
+          "hash": "66b888d7bfdcf09f",
+          "publicPath": "/precogx-docs/assets/js/237.5653b29d.js"
+        }
+      ]
+    },
+    "267": {
+      "js": [
+        {
+          "file": "assets/js/edc0698a.bb6cd020.js",
+          "hash": "4d2169dbb88d0405",
+          "publicPath": "/precogx-docs/assets/js/edc0698a.bb6cd020.js"
+        }
+      ]
+    },
+    "273": {
+      "js": [
+        {
+          "file": "assets/js/92eeeb13.70a2ce6a.js",
+          "hash": "12e192eff227493e",
+          "publicPath": "/precogx-docs/assets/js/92eeeb13.70a2ce6a.js"
+        }
+      ]
+    },
+    "354": {
+      "js": [
+        {
+          "file": "assets/js/runtime~main.186a5f41.js",
+          "hash": "b1ad97cfce51d6e1",
+          "publicPath": "/precogx-docs/assets/js/runtime~main.186a5f41.js"
+        }
+      ]
+    },
+    "361": {
+      "js": [
+        {
+          "file": "assets/js/fbd7a87c.62939515.js",
+          "hash": "00170dd82cdfb846",
+          "publicPath": "/precogx-docs/assets/js/fbd7a87c.62939515.js"
+        }
+      ]
+    },
+    "401": {
+      "js": [
+        {
+          "file": "assets/js/17896441.ac46fbbc.js",
+          "hash": "275ed46ca2e8bbc7",
+          "publicPath": "/precogx-docs/assets/js/17896441.ac46fbbc.js"
+        }
+      ]
+    },
+    "443": {
+      "js": [
+        {
+          "file": "assets/js/5281b7a2.3885e93d.js",
+          "hash": "1444820bf875eb3a",
+          "publicPath": "/precogx-docs/assets/js/5281b7a2.3885e93d.js"
+        }
+      ]
+    },
+    "583": {
+      "js": [
+        {
+          "file": "assets/js/1df93b7f.1dfa3fbc.js",
+          "hash": "e7ffbfec25209980",
+          "publicPath": "/precogx-docs/assets/js/1df93b7f.1dfa3fbc.js"
+        }
+      ]
+    },
+    "595": {
+      "js": [
+        {
+          "file": "assets/js/5b44f34d.220bec63.js",
+          "hash": "91b62a1efea41521",
+          "publicPath": "/precogx-docs/assets/js/5b44f34d.220bec63.js"
+        }
+      ]
+    },
+    "640": {
+      "js": [
+        {
+          "file": "assets/js/3fd68248.4b03b846.js",
+          "hash": "f567d30e5cd4248d",
+          "publicPath": "/precogx-docs/assets/js/3fd68248.4b03b846.js"
+        }
+      ]
+    },
+    "647": {
+      "js": [
+        {
+          "file": "assets/js/5e95c892.da76c2bd.js",
+          "hash": "c3f8867b766060a8",
+          "publicPath": "/precogx-docs/assets/js/5e95c892.da76c2bd.js"
+        }
+      ]
+    },
+    "687": {
+      "js": [
+        {
+          "file": "assets/js/6525ad36.2161b7b2.js",
+          "hash": "41697925f0dff765",
+          "publicPath": "/precogx-docs/assets/js/6525ad36.2161b7b2.js"
+        }
+      ]
+    },
+    "742": {
+      "js": [
+        {
+          "file": "assets/js/aba21aa0.095b18e1.js",
+          "hash": "054c580ff8ecf29f",
+          "publicPath": "/precogx-docs/assets/js/aba21aa0.095b18e1.js"
+        }
+      ]
+    },
+    "792": {
+      "js": [
+        {
+          "file": "assets/js/main.00cf5645.js",
+          "hash": "0a4bbc83404118cc",
+          "publicPath": "/precogx-docs/assets/js/main.00cf5645.js"
+        }
+      ]
+    },
+    "869": {
+      "css": [
+        {
+          "file": "assets/css/styles.8532baaa.css",
+          "hash": "ce3938ec14cb3a70",
+          "publicPath": "/precogx-docs/assets/css/styles.8532baaa.css"
+        }
+      ]
+    },
+    "884": {
+      "js": [
+        {
+          "file": "assets/js/db32d859.79969ac4.js",
+          "hash": "bd7e14c5c7282d7d",
+          "publicPath": "/precogx-docs/assets/js/db32d859.79969ac4.js"
+        }
+      ]
+    },
+    "924": {
+      "js": [
+        {
+          "file": "assets/js/54f44165.790c128f.js",
+          "hash": "c5c79afac6d486cf",
+          "publicPath": "/precogx-docs/assets/js/54f44165.790c128f.js"
+        }
+      ]
+    },
+    "976": {
+      "js": [
+        {
+          "file": "assets/js/0e384e19.fe1e9e47.js",
+          "hash": "ccfa4bd27da1fe77",
+          "publicPath": "/precogx-docs/assets/js/0e384e19.fe1e9e47.js"
+        }
+      ]
+    }
+  }
+}

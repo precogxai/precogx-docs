@@ -1,0 +1,87 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/precogx-docs/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/precogx-docs/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "architecture",
+              "path": "/precogx-docs/docs/architecture",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "customer-value",
+              "path": "/precogx-docs/docs/customer-value",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "faq",
+              "path": "/precogx-docs/docs/faq",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "frameworks",
+              "path": "/precogx-docs/docs/frameworks",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting-started/first-agent",
+              "path": "/precogx-docs/docs/getting-started/first-agent",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting-started/installation",
+              "path": "/precogx-docs/docs/getting-started/installation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting-started/quickstart",
+              "path": "/precogx-docs/docs/getting-started/quickstart",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/precogx-docs/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "no-code-integration",
+              "path": "/precogx-docs/docs/no-code-integration",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "pricing",
+              "path": "/precogx-docs/docs/pricing",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security",
+              "path": "/precogx-docs/docs/security",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "slack-integration",
+              "path": "/precogx-docs/docs/slack-integration"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/precogx-docs/docs/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "pricing",
+  "title": "Pricing",
+  "description": "PrecogX offers flexible pricing plans designed to scale with your AI security needs. Our \"Agent-as-Impact™\" model ensures you only pay for meaningful security events, not API calls or storage.",
+  "source": "@site/docs/pricing.md",
+  "sourceDirName": ".",
+  "slug": "/pricing",
+  "permalink": "/precogx-docs/docs/pricing",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/precogxai/precogx-docs/tree/main/docs/pricing.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Security & Encryption",
+    "permalink": "/precogx-docs/docs/security"
+  },
+  "next": {
+    "title": "Customer Value Delivery",
+    "permalink": "/precogx-docs/docs/customer-value"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "getting-started/quickstart",
+  "title": "Quickstart Guide",
+  "description": "Get up and running with PrecogX in 5 minutes.",
+  "source": "@site/docs/getting-started/quickstart.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/quickstart",
+  "permalink": "/precogx-docs/docs/getting-started/quickstart",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/precogxai/precogx-docs/tree/main/docs/getting-started/quickstart.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Welcome to PrecogX",
+    "permalink": "/precogx-docs/docs/intro"
+  },
+  "next": {
+    "title": "Installation Guide",
+    "permalink": "/precogx-docs/docs/getting-started/installation"
+  }
+}
