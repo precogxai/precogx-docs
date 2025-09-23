@@ -1,7 +1,7 @@
 {
   "id": "getting-started/first-agent",
-  "title": "Creating Your First Agent",
-  "description": "Learn how to create and protect your first AI agent with PrecogX.",
+  "title": "Connecting Your First Agent",
+  "description": "Learn how to connect your existing AI agents to PrecogX's security monitoring platform.",
   "source": "@site/docs/getting-started/first-agent.md",
   "sourceDirName": "getting-started",
   "slug": "/getting-started/first-agent",
