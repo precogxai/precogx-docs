@@ -30,6 +30,16 @@ const sidebars: SidebarsConfig = {
       items: [
         'frameworks',
         'no-code-integration',
+        {
+          type: 'category',
+          label: 'Platform Integrations',
+          items: [
+            'integrations/flowise',
+            'integrations/n8n',
+            'integrations/dify',
+          ],
+        },
+        'api-reference',
       ],
     },
     {
