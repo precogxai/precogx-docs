@@ -28,12 +28,18 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Integration Guides',
       items: [
-        'frameworks',
-        'no-code-integration',
         {
           type: 'category',
-          label: 'Platform Integrations',
+          label: 'Framework Integrations',
           items: [
+            'frameworks',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'No-Code Platform Integrations',
+          items: [
+            'no-code-integration',
             'integrations/flowise',
             'integrations/n8n',
             'integrations/dify',

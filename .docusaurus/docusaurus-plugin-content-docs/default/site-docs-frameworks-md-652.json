@@ -5,7 +5,7 @@
   "source": "@site/docs/frameworks.md",
   "sourceDirName": ".",
   "slug": "/frameworks",
-  "permalink": "/precogx-docs/docs/frameworks",
+  "permalink": "/docs/frameworks",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/precogxai/precogx-docs/tree/main/docs/frameworks.md",
@@ -15,10 +15,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Creating Your First Agent",
-    "permalink": "/precogx-docs/docs/getting-started/first-agent"
+    "permalink": "/docs/getting-started/first-agent"
   },
   "next": {
     "title": "No-Code Platform Integration",
-    "permalink": "/precogx-docs/docs/no-code-integration"
+    "permalink": "/docs/no-code-integration"
   }
 }

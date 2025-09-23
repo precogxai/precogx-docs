@@ -5,7 +5,7 @@
   "source": "@site/docs/intro.md",
   "sourceDirName": ".",
   "slug": "/intro",
-  "permalink": "/precogx-docs/docs/intro",
+  "permalink": "/docs/intro",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/precogxai/precogx-docs/tree/main/docs/intro.md",
@@ -18,6 +18,6 @@
   "sidebar": "tutorialSidebar",
   "next": {
     "title": "Quickstart Guide",
-    "permalink": "/precogx-docs/docs/getting-started/quickstart"
+    "permalink": "/docs/getting-started/quickstart"
   }
 }

@@ -29,7 +29,7 @@ export default {
     "experimental_router": "browser"
   },
   "url": "https://precogxai.github.io",
-  "baseUrl": "/precogx-docs/",
+  "baseUrl": "/",
   "organizationName": "precogxai",
   "projectName": "precogx-docs",
   "onBrokenLinks": "throw",

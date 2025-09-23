@@ -5,7 +5,7 @@
   "source": "@site/docs/getting-started/first-agent.md",
   "sourceDirName": "getting-started",
   "slug": "/getting-started/first-agent",
-  "permalink": "/precogx-docs/docs/getting-started/first-agent",
+  "permalink": "/docs/getting-started/first-agent",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/precogxai/precogx-docs/tree/main/docs/getting-started/first-agent.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Installation Guide",
-    "permalink": "/precogx-docs/docs/getting-started/installation"
+    "permalink": "/docs/getting-started/installation"
   },
   "next": {
     "title": "Framework Integration",
-    "permalink": "/precogx-docs/docs/frameworks"
+    "permalink": "/docs/frameworks"
   }
 }

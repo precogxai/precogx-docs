@@ -1,0 +1,24 @@
+{
+  "id": "integrations/n8n",
+  "title": "n8n Integration Guide",
+  "description": "Connect your n8n workflows to PrecogX for comprehensive AI security monitoring and threat detection.",
+  "source": "@site/docs/integrations/n8n.md",
+  "sourceDirName": "integrations",
+  "slug": "/integrations/n8n",
+  "permalink": "/docs/integrations/n8n",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/precogxai/precogx-docs/tree/main/docs/integrations/n8n.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Flowise Integration Guide",
+    "permalink": "/docs/integrations/flowise"
+  },
+  "next": {
+    "title": "Dify Integration Guide",
+    "permalink": "/docs/integrations/dify"
+  }
+}

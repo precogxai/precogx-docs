@@ -5,7 +5,7 @@
   "source": "@site/docs/security.md",
   "sourceDirName": ".",
   "slug": "/security",
-  "permalink": "/precogx-docs/docs/security",
+  "permalink": "/docs/security",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/precogxai/precogx-docs/tree/main/docs/security.md",
@@ -15,10 +15,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Layered Security Architecture",
-    "permalink": "/precogx-docs/docs/architecture"
+    "permalink": "/docs/architecture"
   },
   "next": {
     "title": "Pricing",
-    "permalink": "/precogx-docs/docs/pricing"
+    "permalink": "/docs/pricing"
   }
 }

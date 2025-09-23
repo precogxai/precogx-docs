@@ -5,7 +5,7 @@
   "source": "@site/docs/architecture.md",
   "sourceDirName": ".",
   "slug": "/architecture",
-  "permalink": "/precogx-docs/docs/architecture",
+  "permalink": "/docs/architecture",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/precogxai/precogx-docs/tree/main/docs/architecture.md",
@@ -14,11 +14,11 @@
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "No-Code Platform Integration",
-    "permalink": "/precogx-docs/docs/no-code-integration"
+    "title": "API Reference",
+    "permalink": "/docs/api-reference"
   },
   "next": {
     "title": "Security & Encryption",
-    "permalink": "/precogx-docs/docs/security"
+    "permalink": "/docs/security"
   }
 }

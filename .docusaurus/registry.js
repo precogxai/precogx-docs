@@ -1,6 +1,8 @@
 export default {
+  "0058b4c6": [() => import(/* webpackChunkName: "0058b4c6" */ "@generated/docusaurus-plugin-content-docs/default/p/docs-175.json"), "@generated/docusaurus-plugin-content-docs/default/p/docs-175.json", require.resolveWeak("@generated/docusaurus-plugin-content-docs/default/p/docs-175.json")],
   "0480b142": [() => import(/* webpackChunkName: "0480b142" */ "@site/docs/faq.md"), "@site/docs/faq.md", require.resolveWeak("@site/docs/faq.md")],
   "0e384e19": [() => import(/* webpackChunkName: "0e384e19" */ "@site/docs/intro.md"), "@site/docs/intro.md", require.resolveWeak("@site/docs/intro.md")],
+  "14e84234": [() => import(/* webpackChunkName: "14e84234" */ "@site/docs/integrations/n8n.md"), "@site/docs/integrations/n8n.md", require.resolveWeak("@site/docs/integrations/n8n.md")],
   "17896441": [() => import(/* webpackChunkName: "17896441" */ "@theme/DocItem"), "@theme/DocItem", require.resolveWeak("@theme/DocItem")],
   "1df93b7f": [() => import(/* webpackChunkName: "1df93b7f" */ "@site/src/pages/index.tsx"), "@site/src/pages/index.tsx", require.resolveWeak("@site/src/pages/index.tsx")],
   "3fd68248": [() => import(/* webpackChunkName: "3fd68248" */ "@site/docs/pricing.md"), "@site/docs/pricing.md", require.resolveWeak("@site/docs/pricing.md")],
@@ -13,10 +15,12 @@ export default {
   "6525ad36": [() => import(/* webpackChunkName: "6525ad36" */ "@site/docs/frameworks.md"), "@site/docs/frameworks.md", require.resolveWeak("@site/docs/frameworks.md")],
   "7ab8c43e": [() => import(/* webpackChunkName: "7ab8c43e" */ "@site/docs/no-code-integration.md"), "@site/docs/no-code-integration.md", require.resolveWeak("@site/docs/no-code-integration.md")],
   "92eeeb13": [() => import(/* webpackChunkName: "92eeeb13" */ "@site/docs/getting-started/first-agent.md"), "@site/docs/getting-started/first-agent.md", require.resolveWeak("@site/docs/getting-started/first-agent.md")],
+  "964ae018": [() => import(/* webpackChunkName: "964ae018" */ "@site/docs/api-reference.md"), "@site/docs/api-reference.md", require.resolveWeak("@site/docs/api-reference.md")],
   "a7456010": [() => import(/* webpackChunkName: "a7456010" */ "@generated/docusaurus-plugin-content-pages/default/__plugin.json"), "@generated/docusaurus-plugin-content-pages/default/__plugin.json", require.resolveWeak("@generated/docusaurus-plugin-content-pages/default/__plugin.json")],
+  "a77957ff": [() => import(/* webpackChunkName: "a77957ff" */ "@site/docs/integrations/dify.md"), "@site/docs/integrations/dify.md", require.resolveWeak("@site/docs/integrations/dify.md")],
   "a7bd4aaa": [() => import(/* webpackChunkName: "a7bd4aaa" */ "@theme/DocVersionRoot"), "@theme/DocVersionRoot", require.resolveWeak("@theme/DocVersionRoot")],
   "a94703ab": [() => import(/* webpackChunkName: "a94703ab" */ "@theme/DocRoot"), "@theme/DocRoot", require.resolveWeak("@theme/DocRoot")],
   "aba21aa0": [() => import(/* webpackChunkName: "aba21aa0" */ "@generated/docusaurus-plugin-content-docs/default/__plugin.json"), "@generated/docusaurus-plugin-content-docs/default/__plugin.json", require.resolveWeak("@generated/docusaurus-plugin-content-docs/default/__plugin.json")],
+  "c15b2c68": [() => import(/* webpackChunkName: "c15b2c68" */ "@site/docs/integrations/flowise.md"), "@site/docs/integrations/flowise.md", require.resolveWeak("@site/docs/integrations/flowise.md")],
   "db32d859": [() => import(/* webpackChunkName: "db32d859" */ "@site/docs/security.md"), "@site/docs/security.md", require.resolveWeak("@site/docs/security.md")],
-  "edc0698a": [() => import(/* webpackChunkName: "edc0698a" */ "@generated/docusaurus-plugin-content-docs/default/p/precogx-docs-docs-8a7.json"), "@generated/docusaurus-plugin-content-docs/default/p/precogx-docs-docs-8a7.json", require.resolveWeak("@generated/docusaurus-plugin-content-docs/default/p/precogx-docs-docs-8a7.json")],
   "fbd7a87c": [() => import(/* webpackChunkName: "fbd7a87c" */ "@site/docs/getting-started/quickstart.md"), "@site/docs/getting-started/quickstart.md", require.resolveWeak("@site/docs/getting-started/quickstart.md")],};

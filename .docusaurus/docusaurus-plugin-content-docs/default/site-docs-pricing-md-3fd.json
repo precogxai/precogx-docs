@@ -5,7 +5,7 @@
   "source": "@site/docs/pricing.md",
   "sourceDirName": ".",
   "slug": "/pricing",
-  "permalink": "/precogx-docs/docs/pricing",
+  "permalink": "/docs/pricing",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/precogxai/precogx-docs/tree/main/docs/pricing.md",
@@ -15,10 +15,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Security & Encryption",
-    "permalink": "/precogx-docs/docs/security"
+    "permalink": "/docs/security"
   },
   "next": {
     "title": "Customer Value Delivery",
-    "permalink": "/precogx-docs/docs/customer-value"
+    "permalink": "/docs/customer-value"
   }
 }

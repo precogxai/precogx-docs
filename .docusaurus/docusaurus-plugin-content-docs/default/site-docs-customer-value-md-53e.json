@@ -5,7 +5,7 @@
   "source": "@site/docs/customer-value.md",
   "sourceDirName": ".",
   "slug": "/customer-value",
-  "permalink": "/precogx-docs/docs/customer-value",
+  "permalink": "/docs/customer-value",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/precogxai/precogx-docs/tree/main/docs/customer-value.md",
@@ -15,10 +15,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Pricing",
-    "permalink": "/precogx-docs/docs/pricing"
+    "permalink": "/docs/pricing"
   },
   "next": {
     "title": "Frequently Asked Questions (FAQ)",
-    "permalink": "/precogx-docs/docs/faq"
+    "permalink": "/docs/faq"
   }
 }

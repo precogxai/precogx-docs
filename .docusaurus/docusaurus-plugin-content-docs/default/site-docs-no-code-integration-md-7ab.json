@@ -1,11 +1,11 @@
 {
   "id": "no-code-integration",
   "title": "No-Code Platform Integration",
-  "description": "This guide provides instructions for integrating PrecogX with popular no-code AI platforms. No coding required - just configure webhooks and start protecting your AI agents!",
+  "description": "Connect your favorite no-code AI platforms and workflow automation tools to PrecogX for comprehensive security monitoring. No coding required - just configure webhooks and start protecting your AI agents!",
   "source": "@site/docs/no-code-integration.md",
   "sourceDirName": ".",
   "slug": "/no-code-integration",
-  "permalink": "/precogx-docs/docs/no-code-integration",
+  "permalink": "/docs/no-code-integration",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/precogxai/precogx-docs/tree/main/docs/no-code-integration.md",
@@ -15,10 +15,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Framework Integration",
-    "permalink": "/precogx-docs/docs/frameworks"
+    "permalink": "/docs/frameworks"
   },
   "next": {
-    "title": "Layered Security Architecture",
-    "permalink": "/precogx-docs/docs/architecture"
+    "title": "Flowise Integration Guide",
+    "permalink": "/docs/integrations/flowise"
   }
 }

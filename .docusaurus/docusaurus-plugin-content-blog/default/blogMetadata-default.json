@@ -1,5 +1,5 @@
 {
-  "blogBasePath": "/precogx-docs/blog",
+  "blogBasePath": "/blog",
   "blogTitle": "Blog",
-  "authorsListPath": "/precogx-docs/blog/authors"
+  "authorsListPath": "/blog/authors"
 }

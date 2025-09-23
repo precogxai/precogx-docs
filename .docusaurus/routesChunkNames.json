@@ -1,66 +1,82 @@
 {
-  "/precogx-docs/docs-733": {
+  "/docs-ef5": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/precogx-docs/docs-684": {
+  "/docs-925": {
     "__comp": "a7bd4aaa",
-    "__props": "edc0698a"
+    "__props": "0058b4c6"
   },
-  "/precogx-docs/docs-456": {
+  "/docs-aa1": {
     "__comp": "a94703ab"
   },
-  "/precogx-docs/docs/architecture-62e": {
+  "/docs/api-reference-756": {
+    "__comp": "17896441",
+    "content": "964ae018"
+  },
+  "/docs/architecture-4b2": {
     "__comp": "17896441",
     "content": "5281b7a2"
   },
-  "/precogx-docs/docs/customer-value-3fa": {
+  "/docs/customer-value-20c": {
     "__comp": "17896441",
     "content": "53ef62c9"
   },
-  "/precogx-docs/docs/faq-1ce": {
+  "/docs/faq-947": {
     "__comp": "17896441",
     "content": "0480b142"
   },
-  "/precogx-docs/docs/frameworks-0af": {
+  "/docs/frameworks-71a": {
     "__comp": "17896441",
     "content": "6525ad36"
   },
-  "/precogx-docs/docs/getting-started/first-agent-4bc": {
+  "/docs/getting-started/first-agent-2d3": {
     "__comp": "17896441",
     "content": "92eeeb13"
   },
-  "/precogx-docs/docs/getting-started/installation-177": {
+  "/docs/getting-started/installation-267": {
     "__comp": "17896441",
     "content": "54f44165"
   },
-  "/precogx-docs/docs/getting-started/quickstart-90e": {
+  "/docs/getting-started/quickstart-1cd": {
     "__comp": "17896441",
     "content": "fbd7a87c"
   },
-  "/precogx-docs/docs/intro-ae7": {
+  "/docs/integrations/dify-120": {
+    "__comp": "17896441",
+    "content": "a77957ff"
+  },
+  "/docs/integrations/flowise-1cb": {
+    "__comp": "17896441",
+    "content": "c15b2c68"
+  },
+  "/docs/integrations/n8n-d75": {
+    "__comp": "17896441",
+    "content": "14e84234"
+  },
+  "/docs/intro-61d": {
     "__comp": "17896441",
     "content": "0e384e19"
   },
-  "/precogx-docs/docs/no-code-integration-531": {
+  "/docs/no-code-integration-03b": {
     "__comp": "17896441",
     "content": "7ab8c43e"
   },
-  "/precogx-docs/docs/pricing-478": {
+  "/docs/pricing-e46": {
     "__comp": "17896441",
     "content": "3fd68248"
   },
-  "/precogx-docs/docs/security-cb7": {
+  "/docs/security-3ef": {
     "__comp": "17896441",
     "content": "db32d859"
   },
-  "/precogx-docs/docs/slack-integration-536": {
+  "/docs/slack-integration-49d": {
     "__comp": "17896441",
     "content": "5b44f34d"
   },
-  "/precogx-docs/-448": {
+  "/-e5f": {
     "__comp": "1df93b7f",
     "__context": {
       "plugin": "a7456010"
