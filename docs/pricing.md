@@ -2,7 +2,7 @@
 
 PrecogX offers flexible pricing plans designed to scale with your AI security needs. Our "Agent-as-Impact™" model ensures you only pay for meaningful security events, not API calls or storage.
 
-## 🆓 FREE TRIAL (30 days)
+## 🆓 FREE PLAN (Forever)
 
 **Purpose**: Experience full platform with no commitment
 
@@ -102,14 +102,14 @@ You only pay for meaningful security events (impact events), not API calls or st
 
 ## Data Retention
 
-- **FREE TRIAL**: 30 days
+- **FREE PLAN**: 30 days
 - **PROFESSIONAL**: 90 days
 - **BUSINESS**: 180 days
 - **ENTERPRISE**: 1 year (customizable)
 
 ## Support Levels
 
-- **FREE TRIAL**: Community support
+- **FREE PLAN**: Community support
 - **PROFESSIONAL**: Priority email support
 - **BUSINESS**: Phone + email support
 - **ENTERPRISE**: 24/7 phone + dedicated support
@@ -137,4 +137,4 @@ All plans include:
 - **Support**: support@precogx.ai
 - **Enterprise**: enterprise@precogx.ai
 
-Ready to secure your AI agents? [Start your free trial today!](https://app.precogx.ai/signup)
+Ready to secure your AI agents? [Start free today!](https://app.precogx.ai/signup)

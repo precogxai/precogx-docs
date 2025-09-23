@@ -14,7 +14,7 @@ Get up and running with PrecogX in 5 minutes.
 ## Step 1: Create Your Account
 
 1. Visit [app.precogx.ai](https://app.precogx.ai)
-2. Click **"Start Free Trial"**
+2. Click **"Start Free"**
 3. Complete the signup form (no credit card required)
 4. Verify your email address
 
