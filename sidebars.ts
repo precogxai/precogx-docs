@@ -52,6 +52,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Security & Architecture',
       items: [
+        'real-time-prevention',
         'architecture',
         'security',
       ],
