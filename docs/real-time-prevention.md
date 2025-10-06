@@ -27,8 +27,8 @@ graph TD
     A[User Input] --> B[AI Agent Function]
     B --> C[PrecogX Interceptor]
     C --> D{Real-Time Validation}
-    D -->|ALLOW <100ms| E[Function Execution]
-    D -->|BLOCK <100ms| F[Security Exception]
+    D -->|ALLOW &lt;100ms| E[Function Execution]
+    D -->|BLOCK &lt;100ms| F[Security Exception]
     E --> G[AI Response]
     F --> H[Blocked Action Log]
     G --> I[Post-Processing Telemetry]
@@ -48,7 +48,7 @@ graph TD
 | **Privilege Check** | ~5ms | Context-based permission validation |
 | **File Operation Check** | ~5ms | Pattern matching for dangerous file ops |
 | **Network Overhead** | ~50ms | HTTP request/response latency |
-| **Total Response Time** | **<100ms** | Complete validation cycle |
+| **Total Response Time** | **&lt;100ms** | Complete validation cycle |
 
 ### Performance Optimizations
 
@@ -188,7 +188,7 @@ sequenceDiagram
 | Feature | SDK | HTTP API | No-Code |
 |---------|-----|----------|---------|
 | **Real-Time Prevention** | ✅ | ✅ | ✅ |
-| **Response Time** | <100ms | <100ms | <100ms |
+| **Response Time** | &lt;100ms | &lt;100ms | &lt;100ms |
 | **Setup Complexity** | Low | Medium | Low |
 | **Language Support** | Python | Any | Platform-specific |
 | **Function Wrapping** | Automatic | Manual | Node-based |
