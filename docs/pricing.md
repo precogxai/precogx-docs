@@ -7,7 +7,7 @@ PrecogX offers flexible pricing plans designed to scale with your AI security ne
 **Purpose**: Experience full platform with no commitment
 
 - **Agents**: 1 AI Agent Protection
-- **Events**: 1,000 Security Events
+- **Events**: 100 Impact Events / month
 - **Key Features**:
   - 6 Core Threat Detections
   - Real-time Dashboard
@@ -20,8 +20,8 @@ PrecogX offers flexible pricing plans designed to scale with your AI security ne
 
 **Purpose**: Advanced security with integrations
 
-- **Agents**: 5 AI Agents
-- **Events**: 10,000 Security Events
+- **Agents**: 10 AI Agents
+- **Events**: 2,000 Impact Events / month
 - **Key Features**:
   - **Everything in FREE TRIAL +**
   - Detection Hub
@@ -37,8 +37,8 @@ PrecogX offers flexible pricing plans designed to scale with your AI security ne
 
 **Purpose**: Enterprise security with AI-powered analysis
 
-- **Agents**: 20 AI Agents
-- **Events**: 50,000 Security Events
+- **Agents**: 30 AI Agents
+- **Events**: 10,000 Impact Events / month
 - **Key Features**:
   - **Everything in PROFESSIONAL +**
   - Custom Detection Thresholds
@@ -78,8 +78,8 @@ You only pay for meaningful security events (impact events), not API calls or st
 
 | Feature | FREE TRIAL | PROFESSIONAL | BUSINESS | ENTERPRISE |
 |---------|------------|--------------|----------|------------|
-| AI Agents | 1 | 5 | 20 | Unlimited |
-| Security Events | 1,000 | 10,000 | 50,000 | Unlimited |
+| AI Agents | 1 | 10 | 30 | Unlimited |
+| Impact Events / month | 100 | 2,000 | 10,000 | Unlimited |
 | Core Detection | ✅ | ✅ | ✅ | ✅ |
 | Real-time Dashboard | ✅ | ✅ | ✅ | ✅ |
 | No-Code Platform Support | ✅ | ✅ | ✅ | ✅ |

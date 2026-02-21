@@ -59,6 +59,13 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'SDK Reference',
+      items: [
+        'sdk/how-agents-work',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Business',
       items: [
         'pricing',

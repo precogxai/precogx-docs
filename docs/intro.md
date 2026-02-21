@@ -48,9 +48,9 @@ Get up and running with PrecogX in just 5 minutes:
 
 ## Pricing
 
-- **FREE TRIAL** - 30 days, 1 agent, 1,000 events
-- **PROFESSIONAL** - $79/month, 5 agents, 10,000 events  
-- **BUSINESS** - $199/month, 20 agents, 50,000 events
+- **FREE** - Forever free, 1 agent, 100 impact events/month
+- **PROFESSIONAL** - $79/month, 10 agents, 2,000 impact events/month
+- **BUSINESS** - $199/month, 30 agents, 10,000 impact events/month
 - **ENTERPRISE** - Custom pricing, unlimited agents
 
 [View full pricing details →](https://precogx.ai/#pricing)
