@@ -9,7 +9,7 @@ PrecogX offers flexible pricing plans designed to scale with your AI security ne
 - **Agents**: 1 AI Agent Protection
 - **Events**: 100 Impact Events / month
 - **Key Features**:
-  - 6 Core Threat Detections
+  - 7 Core Threat Detections
   - Real-time Dashboard
   - Email Alerts
   - Data encryption in transit and at rest

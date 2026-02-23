@@ -20,7 +20,7 @@ PrecogX protects your AI agents from sophisticated threats including:
 ## Key Features
 
 ### 🛡️ **Real-time Detection**
-6 advanced detection modules with sub-100ms response times, including prompt injection, PII leakage, and content moderation.
+7 advanced detection modules with sub-100ms response times — prompt injection (130+ patterns), PII leakage (Presidio NER, 50+ entity types), credential scanning (entropy-based), behavioral drift, malicious links (Safe Browsing), content moderation (OpenAI Moderation API), and tool abuse classification.
 
 ### 📊 **Dynamic Trust Scoring**
 Adaptive trust scoring that learns from your agents' behavior patterns and threat landscape.
