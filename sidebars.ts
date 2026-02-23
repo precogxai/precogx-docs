@@ -73,6 +73,26 @@ const sidebars: SidebarsConfig = {
         'faq',
       ],
     },
+    {
+      type: 'category',
+      label: 'Case Studies',
+      items: [
+        'case-studies/overview',
+        'case-studies/fintech-trading',
+        'case-studies/healthcare-clinical',
+        'case-studies/ecommerce-support',
+        'case-studies/legal-contract',
+        'case-studies/hr-talent',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Legal',
+      items: [
+        'legal/terms',
+        'legal/privacy',
+      ],
+    },
   ],
 };
 
