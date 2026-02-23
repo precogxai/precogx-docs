@@ -45,13 +45,17 @@ npm install @precogx/sdk
 
 ## Step 4: Initialize the Client
 
+Set your `agent_id` **once** when initializing the client — you never need to repeat it on every call.
+
 ### Python
 
 ```python
 from precogx_sdk import PrecogXClient
 
-# Initialize the client
-client = PrecogXClient(api_key="your_api_key_here")
+client = PrecogXClient(
+    api_key="your_api_key_here",
+    agent_id="my-first-agent",   # set once here, applied to every call automatically
+)
 ```
 
 ### JavaScript
@@ -59,51 +63,53 @@ client = PrecogXClient(api_key="your_api_key_here")
 ```javascript
 import { PrecogXClient } from '@precogx/sdk';
 
-// Initialize the client
-const client = new PrecogXClient('your_api_key_here');
+const client = new PrecogXClient({
+  apiKey: 'your_api_key_here',
+  agentId: 'my-first-agent',    // set once here, applied to every call automatically
+});
 ```
+
+:::tip What is agent_id?
+The `agent_id` is a name you choose to identify this agent in your PrecogX dashboard (e.g. `"support-bot"`, `"invoice-processor"`). Each unique name counts as one agent toward your plan limit. Use the **same name every time** the same agent runs so its trust score and history accumulate correctly.
+:::
 
 ## Step 5: Send Your First Telemetry
 
 ### Python
 
 ```python
-# Send telemetry data
+# agent_id is applied automatically — no need to repeat it on every call
 result = client.send_telemetry({
-    "agent_id": "my_first_agent",
     "prompt": "Hello, how can I help you today?",
     "response": "I'm here to assist you with any questions you might have.",
     "tool_calls": []
 })
 
-# Check for threats
-if result.flags:
-    print(f"🚨 Threat detected: {result.flags[0]}")
+if result["flags"]:
+    print(f"🚨 Threat detected: {result['flags'][0]}")
 else:
     print("✅ No threats detected")
 
-print(f"Trust Score: {result.risk_score}")
+print(f"Risk Score: {result['risk_score']}")
 ```
 
 ### JavaScript
 
 ```javascript
-// Send telemetry data
+// agentId is applied automatically — no need to repeat it on every call
 const result = await client.sendTelemetry({
-  agentId: 'my_first_agent',
   prompt: 'Hello, how can I help you today?',
   response: 'I\'m here to assist you with any questions you might have.',
   toolCalls: []
 });
 
-// Check for threats
 if (result.flags.length > 0) {
   console.log(`🚨 Threat detected: ${result.flags[0]}`);
 } else {
   console.log('✅ No threats detected');
 }
 
-console.log(`Trust Score: ${result.riskScore}`);
+console.log(`Risk Score: ${result.riskScore}`);
 ```
 
 ## Step 6: View Results in Dashboard

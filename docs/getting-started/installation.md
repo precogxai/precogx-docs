@@ -89,14 +89,19 @@ console.log('PrecogX SDK installed successfully');
 ### LangChain
 
 ```python
+from precogx_sdk import PrecogXEmitter
 from precogx_sdk.langchain import PrecogXCallbackHandler
 from langchain.llms import OpenAI
 
-# Initialize LangChain with PrecogX
-llm = OpenAI(temperature=0)
-handler = PrecogXCallbackHandler(api_key="your_api_key")
+# Set agent_id once on the emitter — the callback handler inherits it
+emitter = PrecogXEmitter(
+    backend_url="https://api.precogx.ai",
+    api_key="your_api_key",
+    agent_id="my-langchain-agent",    # set once here
+)
+handler = PrecogXCallbackHandler(emitter=emitter, agent_id=emitter.agent_id)
 
-# Use in your chain
+llm = OpenAI(temperature=0)
 llm.call("Hello world", callbacks=[handler])
 ```
 
@@ -104,12 +109,11 @@ llm.call("Hello world", callbacks=[handler])
 
 ```python
 from precogx_sdk.autogen import PrecogXAgent
-import autogen
 
-# Create PrecogX-protected agent
 agent = PrecogXAgent(
     name="assistant",
     api_key="your_api_key",
+    agent_id="my-autogen-agent",      # identifies this agent in PrecogX dashboard
     system_message="You are a helpful assistant."
 )
 ```
@@ -118,68 +122,94 @@ agent = PrecogXAgent(
 
 ```python
 from precogx_sdk.crewai import PrecogXAgent
-from crewai import Task, Crew
 
-# Create PrecogX-protected agent
 agent = PrecogXAgent(
     role="Researcher",
     goal="Research topics",
     backstory="You are a research assistant",
-    api_key="your_api_key"
+    api_key="your_api_key",
+    agent_id="my-crewai-researcher",  # identifies this agent in PrecogX dashboard
 )
 ```
 
 ## No-Code Platforms
 
+For no-code platforms, include `agentId` as a **fixed value** in your HTTP request body. Use a descriptive name — it will appear as the agent name in your PrecogX dashboard.
+
 ### Flowise
 
-1. Add HTTP Request node
-2. Configure endpoint: `https://api.precogx.ai/v1/telemetry`
-3. Set method to POST
-4. Add headers: `Authorization: Bearer YOUR_API_KEY`
-
-### Dify
-
-1. Navigate to Tools section
-2. Add Custom Tool
-3. Configure webhook URL: `https://api.precogx.ai/v1/telemetry`
-4. Add authentication headers
+1. Add **HTTP Request** node
+2. Set URL: `https://api.precogx.ai/api/v1/telemetry/ingest`
+3. Set method to **POST**
+4. Add header: `x-api-key: YOUR_API_KEY`
+5. Set JSON body:
+```json
+{
+  "agentId": "my-flowise-agent",
+  "prompt": "{{input}}",
+  "response": "{{output}}"
+}
+```
 
 ### n8n
 
-1. Add HTTP Request node
-2. Set URL: `https://api.precogx.ai/v1/telemetry`
-3. Add Authorization header
-4. Configure request body
+1. Add **HTTP Request** node
+2. Set URL: `https://api.precogx.ai/api/v1/telemetry/ingest`
+3. Set method to **POST**
+4. Add header: `x-api-key: YOUR_API_KEY`
+5. Set JSON body:
+```json
+{
+  "agentId": "my-n8n-agent",
+  "prompt": "{{ $json.prompt }}",
+  "response": "{{ $json.response }}"
+}
+```
 
-### Langflow
+### Dify
 
-1. Add Custom Component
-2. Configure API endpoint
-3. Add authentication
-4. Map input/output fields
+1. Navigate to **Tools** → **Custom Tool**
+2. Set endpoint: `https://api.precogx.ai/api/v1/telemetry/ingest`
+3. Set method to **POST**
+4. Add header: `x-api-key: YOUR_API_KEY`
+5. Include `agentId` as a fixed string in the request body
 
 ## Environment Configuration
 
-### Environment Variables
+### Environment Variables (Recommended)
 
-Create a `.env` file:
+The simplest integration — set two env vars and you're done. No `agent_id` in any code.
 
 ```bash
+# .env
 PRECOGX_API_KEY=your_api_key_here
-PRECOGX_BASE_URL=https://api.precogx.ai
-PRECOGX_ENVIRONMENT=production
+PRECOGX_AGENT_ID=my-agent-name        # the SDK reads this automatically
 ```
 
-### Python Configuration
+With these set, the entire integration is:
 
 ```python
-import os
 from precogx_sdk import PrecogXClient
 
-# Load from environment
-api_key = os.getenv('PRECOGX_API_KEY')
-client = PrecogXClient(api_key=api_key)
+client = PrecogXClient()   # reads both vars from environment automatically
+client.send_telemetry({"prompt": "...", "response": "..."})
+```
+
+### Multiple Agents
+
+For multiple agents, create one client per agent. All agents share the same API key (same organisation), but each has its own `agent_id`:
+
+```python
+from precogx_sdk import PrecogXClient
+
+# All use the same API key, each has its own identity
+support = PrecogXClient(api_key="your_api_key", agent_id="support-bot")
+sales   = PrecogXClient(api_key="your_api_key", agent_id="sales-bot")
+hr      = PrecogXClient(api_key="your_api_key", agent_id="hr-screener")
+
+# Now each client tracks its own agent independently
+support.send_telemetry({"prompt": "...", "response": "..."})
+sales.send_telemetry({"prompt": "...", "response": "..."})
 ```
 
 ### Node.js Configuration
@@ -187,9 +217,10 @@ client = PrecogXClient(api_key=api_key)
 ```javascript
 const { PrecogXClient } = require('@precogx/sdk');
 
-// Load from environment
-const apiKey = process.env.PRECOGX_API_KEY;
-const client = new PrecogXClient(apiKey);
+const client = new PrecogXClient({
+  apiKey: process.env.PRECOGX_API_KEY,   // from environment
+  agentId: process.env.PRECOGX_AGENT_ID, // from environment
+});
 ```
 
 ## Docker Installation
