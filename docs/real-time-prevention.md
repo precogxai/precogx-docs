@@ -292,6 +292,69 @@ sequenceDiagram
 - **Rich Monitoring**: Comprehensive dashboard for prevention analytics
 - **Flexible Configuration**: Customizable security policies and rules
 
+## 🔒 SDK Integration Contract
+
+When using the PrecogX SDK, every telemetry call returns an `action` verdict. **Your SDK must act on this verdict** — it is the authoritative security decision from the backend.
+
+### The `action` Field
+
+Every response from `POST /api/v1/telemetry/ingest` includes:
+
+```json
+{
+  "action": "BLOCK",
+  "risk_score": 0.95,
+  "flags": ["Prompt injection detected: 'ignore previous instructions'"],
+  ...
+}
+```
+
+| `action` | Meaning | Required SDK behaviour |
+|----------|---------|----------------------|
+| `"ALLOW"` | No threats detected (risk < 0.40) | Continue execution normally |
+| `"REVIEW"` | Ambiguous signals (risk 0.40–0.89) | Log the flags; execution continues; interaction queued for human review |
+| `"BLOCK"` | High-confidence threat (risk ≥ 0.90) | **Raise an exception and halt agent execution** |
+
+### Required SDK Pattern
+
+```python
+import precogx
+
+client = precogx.Client(api_key="YOUR_API_KEY")
+
+# After every agent interaction:
+response = client.send_telemetry(
+    agent_id="my-agent",
+    prompt=user_prompt,
+    response=agent_response,
+    tool_calls=tool_calls_made,
+)
+
+# REQUIRED: act on the action verdict
+if response.action == "BLOCK":
+    raise precogx.BlockedException(
+        f"PrecogX blocked this interaction: {response.flags}"
+    )
+elif response.action == "REVIEW":
+    import logging
+    logging.warning("PrecogX flagged for review: %s", response.flags)
+    # execution continues
+```
+
+### What Each Verdict Means in Practice
+
+**ALLOW** — PrecogX found no indicators of threat. The interaction has been logged and the trust score updated, but no intervention is needed.
+
+**REVIEW** — One or more detectors fired with moderate confidence, or the agent's trust score is low. The interaction is added to the human validation queue in your dashboard. No blocking occurs, but your security team is notified.
+
+**BLOCK** — Multiple high-confidence signals, or a single detector at ≥0.90 confidence (e.g., SSRF attempt, explicit prompt injection, PII exfiltration). The agent **must stop**. Continuing execution after a BLOCK verdict bypasses PrecogX protection.
+
+### Why You Should Not Parse `risk_score` Directly
+
+The `action` field encodes the correct verdict based on compound scoring, trust score context, and threshold calibration. These thresholds are tuned by the PrecogX backend and may be adjusted over time. Always use `action`, not raw `risk_score`, for enforcement logic in your application.
+
+---
+
 ## 🔗 Related Documentation
 
 - [Getting Started Guide](./getting-started/first-agent.md) - Connect your first agent

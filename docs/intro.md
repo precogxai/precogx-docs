@@ -10,17 +10,22 @@ PrecogX is a next-generation SOAR (Security Orchestration, Automation, and Respo
 
 ## What is PrecogX?
 
-PrecogX protects your AI agents from sophisticated threats including:
+PrecogX intercepts dangerous AI agent actions in real time — blocking threats like prompt injection, credential theft, and data exfiltration before they execute, with a clear, auditable explanation of exactly what was detected and why.
 
-- **Prompt Injection Attacks** - Detect and block malicious prompts designed to manipulate AI behavior
-- **PII Leakage** - Prevent sensitive data from being exposed in AI responses
-- **Content Moderation** - Ensure AI outputs comply with your organization's policies
-- **Advanced Threat Detection** - AI-powered analysis to catch sophisticated attack patterns
+Unlike monitoring tools that alert you after the damage is done, PrecogX acts as a pre-execution firewall. Every agent action is validated before it runs. Every block is explained. Every decision is logged with full context so your team can audit, review, and improve over time.
+
+PrecogX protects against:
+
+- **Prompt Injection** — Attackers embedding instructions inside user input to hijack your agent's behavior
+- **PII & Credential Leakage** — Sensitive data (SSNs, credit cards, API keys, passwords) leaving your system in agent responses or tool calls
+- **Tool Abuse & SSRF** — Agents attempting destructive commands, unauthorized file operations, or access to internal network endpoints
+- **Behavioral Drift** — Agents deviating from their established behavior patterns in ways that signal compromise or misuse
+- **Content Violations** — Outputs containing profanity, hate speech, or policy-violating material before they reach end users
 
 ## Key Features
 
-### 🛡️ **Real-time Detection**
-7 advanced detection modules with sub-100ms response times — prompt injection (130+ patterns), PII leakage (Presidio NER, 50+ entity types), credential scanning (entropy-based), behavioral drift, malicious links (Safe Browsing), content moderation (OpenAI Moderation API), and tool abuse classification.
+### 🛡️ **Pre-Execution Firewall**
+Every agent action is validated before it runs. 6 detection modules — prompt injection (130+ patterns), PII leakage, tool abuse + SSRF, malicious links, content moderation, and behavioral drift — compound their signals and return a clear ALLOW / REVIEW / BLOCK verdict to your SDK in under 100ms.
 
 ### 📊 **Dynamic Trust Scoring**
 Adaptive trust scoring that learns from your agents' behavior patterns and threat landscape.
